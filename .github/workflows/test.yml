@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
@@ -30,4 +30,3 @@ jobs:
        PASSWORD: ${{ secrets.PASSWORD }}
        PORT: ${{ secrets.PORT }}
       run: npm test 
-    - run: npm test
